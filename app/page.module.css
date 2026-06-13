@@ -1,0 +1,148 @@
+
+.main { min-height: 100vh; padding: 2rem 1rem; }
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid #e5e5e5;
+}
+
+/* Header */
+.header { display: flex; align-items: center; gap: 14px; margin-bottom: 2rem; }
+.header-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: #E6F1FB; display: flex; align-items: center;
+  justify-content: center; font-size: 22px; flex-shrink: 0;
+}
+.header-title { font-size: 20px; font-weight: 600; }
+.header-sub { font-size: 13px; color: #666; margin-top: 2px; }
+
+/* Section */
+.section { margin-bottom: 1.5rem; }
+.section-label {
+  display: block; font-size: 13px; font-weight: 500;
+  color: #555; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px;
+}
+
+/* Input row */
+.input-row { display: flex; gap: 8px; }
+.query-input {
+  flex: 1; padding: 10px 14px; font-size: 14px;
+  border: 1px solid #ddd; border-radius: 8px; outline: none;
+  transition: border-color 0.15s;
+}
+.query-input:focus { border-color: #185FA5; }
+.query-input:disabled { background: #f9f9f9; }
+
+.run-btn {
+  padding: 10px 20px; font-size: 14px; font-weight: 500;
+  background: #185FA5; color: #fff; border: none;
+  border-radius: 8px; cursor: pointer; white-space: nowrap;
+  transition: background 0.15s, opacity 0.15s;
+}
+.run-btn:hover:not(:disabled) { background: #0C447C; }
+.run-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Dropzone */
+.dropzone {
+  border: 1.5px dashed #ccc; border-radius: 10px;
+  padding: 20px; text-align: center; cursor: pointer;
+  background: #fafafa; font-size: 13px; color: #666;
+  margin-bottom: 10px; transition: border-color 0.15s;
+}
+.dropzone:hover { border-color: #185FA5; }
+.drop-icon { font-size: 26px; margin-bottom: 6px; }
+.drop-hint { font-size: 12px; color: #999; margin-top: 4px; }
+
+/* Doc card */
+.doc-card {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 12px; border: 1px solid #eee;
+  border-radius: 8px; background: #fafafa; margin-bottom: 6px;
+}
+.doc-info { flex: 1; }
+.doc-name { font-size: 13px; font-weight: 500; }
+.doc-meta { font-size: 12px; color: #999; }
+.doc-remove {
+  background: none; border: none; cursor: pointer;
+  font-size: 18px; color: #aaa; line-height: 1;
+}
+.doc-remove:hover { color: #e24b4a; }
+
+/* Tabs */
+.tabs {
+  display: flex; border-bottom: 1px solid #eee;
+  margin-bottom: 16px; gap: 0;
+}
+.tab {
+  padding: 8px 18px; font-size: 13px; background: none;
+  border: none; border-bottom: 2px solid transparent;
+  cursor: pointer; color: #666; transition: all 0.15s;
+}
+.tab:hover { color: #185FA5; }
+.tab-active { color: #185FA5 !important; border-bottom-color: #185FA5 !important; font-weight: 500; }
+
+/* Agent card */
+.agent-card {
+  border: 1px solid #eee; border-radius: 12px;
+  margin-bottom: 8px; overflow: hidden; transition: border-color 0.2s;
+}
+.agent-running { border-width: 1.5px; }
+.agent-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; transition: background 0.2s;
+}
+.agent-icon { font-size: 18px; }
+.agent-name { flex: 1; font-size: 14px; font-weight: 500; }
+.agent-status { font-size: 12px; font-weight: 500; }
+.expand-icon { font-size: 11px; color: #aaa; margin-left: 6px; }
+.agent-output {
+  padding: 12px 14px; border-top: 1px solid #eee;
+  font-size: 12px; font-family: "Menlo", "Monaco", monospace;
+  color: #444; background: #f9f9f9; white-space: pre-wrap;
+  max-height: 220px; overflow-y: auto; line-height: 1.6;
+}
+
+/* Report */
+.report-box {
+  background: #fafafa; border: 1px solid #eee;
+  border-radius: 12px; padding: 1.25rem;
+  font-size: 14px; line-height: 1.8; white-space: pre-wrap;
+  margin-bottom: 12px; color: #111;
+}
+.copy-btn {
+  padding: 8px 18px; font-size: 13px;
+  border: 1px solid #ddd; border-radius: 8px;
+  background: #fff; cursor: pointer; transition: background 0.15s;
+}
+.copy-btn:hover { background: #f5f5f5; }
+
+/* Sources */
+.source-card {
+  padding: 12px 14px; border-radius: 8px;
+  border: 1px solid #eee; margin-bottom: 8px; background: #fff;
+}
+.source-title { font-size: 13px; font-weight: 500; }
+.source-meta { font-size: 12px; color: #185FA5; margin: 3px 0; }
+.source-snippet { font-size: 13px; color: #555; line-height: 1.6; }
+
+.citation-card {
+  padding: 10px 14px; border-radius: 8px;
+  background: #EEEDFE; border: 1px solid #AFA9EC;
+  font-size: 13px; color: #3C3489; line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+/* Misc */
+.error-box {
+  margin-top: 12px; padding: 12px; border-radius: 8px;
+  background: #FCEBEB; border: 1px solid #F09595;
+  color: #791F1F; font-size: 13px;
+}
+.empty-state {
+  text-align: center; padding: 2.5rem 1rem;
+  color: #aaa; font-size: 13px;
+}
