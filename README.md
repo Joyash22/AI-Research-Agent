@@ -1,6 +1,6 @@
 # AI Research Agent
 
-Multi-agent research assistant powered by Claude (Anthropic API).
+Multi-agent research assistant powered by OpenAI.
 
 ## Features
 - 6 specialized agents: Search, RAG, Summarization, Fact-check, Citation, Report
@@ -15,12 +15,12 @@ Multi-agent research assistant powered by Claude (Anthropic API).
 npm install
 ```
 
-### 2. Add your Anthropic API key
+### 2. Add your OpenAI API key
 Edit `.env.local`:
 ```
-ANTHROPIC_API_KEY=your_key_here
+OpenAI_API_KEY=your_key_here
 ```
-Get your key at https://console.anthropic.com
+Get your key at git https://platform.openai.com/api-keys
 
 ### 3. Run the dev server
 ```bash
