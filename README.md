@@ -44,4 +44,4 @@ app/
 ## Tech stack
 - Next.js 14 (App Router)
 - React 18
-- Anthropic Claude API (claude-sonnet-4-6)
+- OpenAI Key
